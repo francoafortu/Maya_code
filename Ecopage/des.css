@@ -3,6 +3,7 @@
   }
   body {
     font-family: 'Open Sans', sans-serif;
+    background-color: #aad0aa;
   }
   a {
     text-decoration: none;
@@ -61,10 +62,11 @@
     }
   }
   .landing-page header .logo {
-    color: #5d5d5d;
+    color: #25f382;
+    text-shadow: black 1px 5px;
     font-style: italic;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 40px;
   }
   @media (max-width: 767px) {
     .landing-page header .logo {
@@ -83,10 +85,11 @@
     }
   }
   .landing-page header .links li {
-    margin-left: 30px;
-    color: #5d5d5d;
+    margin-left: 20px;
+    color: #000000;
     cursor: pointer;
     transition: .3s;
+    font-size: 20px;
   }
   @media (max-width: 767px) {
     .landing-page header .links li {
@@ -96,11 +99,16 @@
   .landing-page header .links li:last-child {
     border-radius: 20px;
     padding: 10px 20px;
-    color: #FFF;
-    background-color: #6c63ff;
+    color: #070404;
+    background-color: #31ca80;
+  }
+  .landing-page header .links li:last-child:hover {
+    color: #0beb70;
+    background-color: #000000;
   }
   .landing-page header .links li:not(:last-child):hover {
-    color: #6c63ff;
+    color: #02b84e;
+    text-shadow: #070404 1px 1px;
   }
   .landing-page .content .container {
     display: flex;
@@ -124,14 +132,15 @@
     }
   }
   .landing-page .content .info h1 {
-    color: #5d5d5d;
-    font-size: 44px;
+    color: #000000;
+    font-size: 35px;
   }
   .landing-page .content .info p {
     margin: 0;
     line-height: 1.6;
-    font-size: 15px;
-    color: #5d5d5d;
+    font-size: 16px;
+    color: #130f0f;
+  
   }
   .landing-page .content .info button {
     border: 0;
@@ -139,9 +148,54 @@
     padding: 12px 30px;
     margin-top: 30px;
     cursor: pointer;
-    color: #FFF;
-    background-color: #6c63ff;
+    color: #08e36f;
+    background-color: #020302;
+    box-shadow: #08e36f 5px 5px;
   }
   .landing-page .content .image img {
     max-width: 100%;
   }
+
+.con {
+    display: flex;
+    height: 100%;
+    
+}
+.im {
+    flex: 1;
+    background-image: url('image.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 40px;
+}
+.cont {
+    flex: 1;
+    padding: 2rem;
+    color: rgb(5, 4, 4);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.mojarra {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #02b84e;
+}
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+.int {
+    background-color: #000000;
+    border: none;
+    color: rgb(11, 254, 100);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
