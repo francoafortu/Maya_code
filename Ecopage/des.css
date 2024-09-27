@@ -65,7 +65,7 @@
     color: #25f382;
     text-shadow: black 1px 5px;
     font-style: italic;
-    text-transform: uppercase;
+    text-transform: unset;
     font-size: 40px;
   }
   @media (max-width: 767px) {
@@ -152,7 +152,7 @@
     background-color: #020302;
     box-shadow: #08e36f 5px 5px;
   }
-  .landing-page .content .image img {
+  .landing-page .content .image .mag {
     max-width: 100%;
   }
 
@@ -198,4 +198,22 @@ p {
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 4px;
+}
+.image {
+  flex: 1;
+  background-size: cover;
+  border-radius: 40px;
+  border-image-width: auto;
+  padding-top: 40px;
+}
+
+.mag {
+  flex: 1;
+  background-size: cover;
+  border-radius: 40px;
+  
+}
+a {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Hereda el color del texto del elemento padre */
 }
