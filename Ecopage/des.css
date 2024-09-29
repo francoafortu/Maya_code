@@ -217,3 +217,120 @@ a {
   text-decoration: none; /* Elimina el subrayado */
   color: inherit; /* Hereda el color del texto del elemento padre */
 }
+
+
+
+#album-rotator {
+  width: 3000px;
+  float: left;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  word-break: keep-all;
+  padding: 3rem 0;
+  align-items: center;
+}
+#album-rotator-holder {
+  position: relative;
+  user-select: none;
+  will-change: transform;
+  /* transition: all 0.01s ease-out; */
+  /* transition: all 0.01s linear; */
+}
+
+
+.album-item {
+  word-break: keep-all;
+  background: rgb(5, 11, 8);
+  box-shadow: 0 2px 30px rgba(0,0,0,0.5);
+  position: relative;
+  width: 250px;
+  -webkit-user-drag: none;
+  /* user-drag: none; */
+  height: 300px;
+  user-select: none;
+  border-radius: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  margin: 0 20rem 0 0;
+  transition: all 0.2s ease-out;
+  transform: scale(1);
+}
+
+.album-item:hover {
+  transform: scale(1.02);
+}
+.album-details {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-shadow: 0 2px 15px rgba(0,0,0,0.5);
+  padding: 1rem;
+  white-space: initial;
+  float: left;
+  box-sizing: border-box;
+  color: rgb(18, 212, 128);
+  height: 100%;
+  font-size: 2.5rem;
+  font-weight: 600;
+  z-index: 99;
+}
+.title {
+  font-weight: 900;
+  display: inline-block;
+  width: 100%;
+}
+.subtitle {
+  font-weight: 100;
+  line-height: 1.25rem;
+}
+.subtext {
+  font-size: 1.1167rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 1.25rem 1rem;
+  width: 100%;
+  white-space: initial;
+  letter-spacing: 0;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+.icon {
+  font-size: 1rem;
+  line-height: 1rem;
+  display: block;
+  padding: 0 0 0.5rem 0;
+}
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  font-weight: 600;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+.mel h2 {
+  text-shadow: #a9bab1 2px 3px;
+}
+.mel {
+  margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    
+}
+#about {
+  margin: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    margin-top: 370px;
+}
